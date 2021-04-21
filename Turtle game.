@@ -1,0 +1,71 @@
+#!/bin/python3
+import time
+from turtle import *
+from random import randint
+speed(0)
+penup()
+goto(-140, 140)
+
+for step in range (15):
+  write(step, align='center')
+  right(90)
+  forward(10)
+  pendown()
+  forward(150)
+  penup()
+  backward(160)
+  left(90)
+  forward(20)
+
+ada = Turtle()
+ada.color('red')
+ada.shape('turtle')
+  
+ada.penup()
+ada.goto(-160, 100)
+ada.pendown()
+ada.right(360)
+
+hannah = Turtle()
+hannah.color('blue')
+hannah.shape('turtle')
+  
+hannah.penup()
+hannah.goto(-160, 78)
+hannah.pendown()
+hannah.right(360)
+
+theodor = Turtle()
+theodor.color('green')
+theodor.shape('turtle')
+  
+theodor.penup()
+theodor.goto(-160, 56)
+theodor.pendown()
+theodor.right(360)
+
+fantorangen = Turtle()
+fantorangen.color('pink')
+fantorangen.shape('turtle')
+  
+fantorangen.penup()
+fantorangen.goto(-160, 34)
+fantorangen.pendown()
+fantorangen.right(360)
+
+import time
+
+num_seconds = 3
+print('Place your bets!')
+for countdown in reversed(range(num_seconds + 1)):
+    if countdown > 0:
+        print(countdown, end='...')
+        time.sleep(1)
+    else:
+        print('Go!')
+
+for turn in range(100):
+  ada.forward(randint(1,5))
+  theodor.forward(randint(1,5))
+  hannah.forward(randint(1,5))
+  fantorangen.forward(randint(1,5))
